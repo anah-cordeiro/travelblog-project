@@ -1,0 +1,9 @@
+:root {
+--primary-color: aqua;
+--accent-color: black;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
