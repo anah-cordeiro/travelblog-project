@@ -1,9 +1,78 @@
 :root {
---primary-color: aqua;
---accent-color: black;
+--primary-color: rgb(243, 243, 183);
+--accent-color: rgb(79, 80, 47);
+--highlight-color: rgb(232, 133, 83);
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
+body {
+    background-color: var(--primary-color);
 }
 
+.container {
+max-width: 1200px;
+margin: 0 auto;
+background-color: white;
+border-radius: 15px;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/media/hero-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 15px;
+  }
+
+  header h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+  }
+
+  header h3 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family:'Roboto Mono', monospace;
+  }
+
+  header p {
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  header button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .about {
+    max-width: 1200px;
+    max-height: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
+@media (max-width:1200px) {
+
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 30px 0;
+      }
+      
+      header h1 {
+        font-size: 20px;
+      }
+}
