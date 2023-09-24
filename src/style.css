@@ -74,6 +74,31 @@ header {
     padding: 10px;
   }
 
+  .advantages-travelling {
+    text-align: center;
+  }
+
+  .advantages-header{
+    color: var(--highlight-color);
+    font-family: 'Roboto Mono', serif;
+  }
+
+  .advantages-table {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  table {
+    min-width: 350px;
+    margin: 0 auto;
+    text-align: justify;
+    border: 4px solid var(--highlight-color);
+    border-radius: 7px;
+    font-family: 'Playfair Display', monospace;
+    color: var(--accent-color);
+  }
+
   .maps, .gallery{
     max-width: 1200px;
     margin: 0 auto;
@@ -82,13 +107,8 @@ header {
     padding: 10px;
   }
 
-  .maps h1, .gallery h1 {
-    color: var(--highlight-color);
-  }
-
   .maps h3, .gallery h3{
     font-family: 'Roboto Mono', monospace;
-    color: var(--highlight-color);
   }
 
   .maps-grid, .gallery-grid{
