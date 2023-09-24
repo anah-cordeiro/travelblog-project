@@ -56,7 +56,6 @@ header {
 
   .about {
     max-width: 1200px;
-    max-height: 700px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -80,10 +79,16 @@ header {
     margin: 0 auto;
     text-align: center;
     color: var(--accent-color);
+    padding: 10px;
+  }
+
+  .maps h1, .gallery h1 {
+    color: var(--highlight-color);
   }
 
   .maps h3, .gallery h3{
     font-family: 'Roboto Mono', monospace;
+    color: var(--highlight-color);
   }
 
   .maps-grid, .gallery-grid{
@@ -96,15 +101,74 @@ header {
 
   }
 
+  .locations {
+    background-color: rgb(225, 169, 96);
+    text-align: justify;
+    border-radius: 7px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 30px 0;
+  }
+
+  .locations-header {
+    display: block;
+    padding: 10px 10px 10px 0px;
+    text-align: center;
+    
+
+  }
+
+  .locations-body {
+    padding: 30px;
+  }
+
+  .locations h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .locations a{
+    display: block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+
+  .locations a:hover{
+    text-decoration: underline;
+  }
+
+
   footer {
     max-width: 1200px;
-    max-height: 400px;
     color: var(--accent-color);
     background-image: linear-gradient(180deg, white, var(--primary-color));
     border-radius: 15px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
+  }
+
+  .more-info, .about-me, .about-website{
+    padding: 10px;
+  }
+
+  .more-info h3, .about-me h3, .about-website h3{
+    color: var(--highlight-color);
+  }
+
+  footer a{
+    text-decoration: none;
+    color: var(--highlight-color);
+  }
+
+  footer a:hover {
+    text-decoration: underline;1
   }
 
 @media (max-width: 900px) {
@@ -114,5 +178,27 @@ header {
       
       header h1 {
         font-size: 20px;
+      }
+
+      .about {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+      }
+
+      .maps-grid, .gallery-grid{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+      }
+
+      footer {
+        border-radius: 15px;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
       }
 }
